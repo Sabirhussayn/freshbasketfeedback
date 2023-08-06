@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Feedback</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img src="Icons/logo.png" alt="Company Logo" id="logo">
+  <h1>Customer Feedback</h1>
+  <div class="rating-container">
+    <div class="rating-option" onclick="showFeedbackForm('Excellent')">
+      <img src="Icons/excellent.gif" alt="Excellent">
+      <p>Excellent</p>
+    </div>
+    <div class="rating-option" onclick="showFeedbackForm('Good')">
+      <img src="Icons/good.gif" alt="Good">
+      <p>Good</p>
+    </div>
+    <div class="rating-option" onclick="showFeedbackForm('Average')">
+      <img src="Icons/average.gif" alt="Average">
+      <p>Average</p>
+    </div>
+    <div class="rating-option" onclick="showFeedbackForm('Need Improvement')">
+      <img src="Icons/need improvement.gif" alt="Need Improvement">
+      <p>Need Improvement</p>
+    </div>
+    <div class="rating-option" onclick="showFeedbackForm('Poor')">
+      <img src="Icons/poor.gif" alt="Poor">
+      <p>Poor</p>
+    </div>
+  </div>
+
+  <div class="feedback-form" id="feedback-form">
+    <h2>Please Provide Your Feedback:</h2>
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Email Address">
+    <input type="tel" id="phone" placeholder="Phone Number">
+    <textarea id="feedback-text" placeholder="Enter your feedback here..."></textarea>
+    <br>
+    <!-- Updated Submit Button with the new icon -->
+    <button id="submit-btn" onclick="submitFeedback()"><img src="Icons/submiticon.png" alt="Submit"></button>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

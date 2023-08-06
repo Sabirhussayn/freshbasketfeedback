@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Take up full screen height */
+}
+
+.rating-option {
+  text-align: center;
+  cursor: pointer;
+}
+
+.rating-option p {
+  margin: 5px 0;
+}
+
+.feedback-form {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Additional styles for input boxes */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  margin-top: -7px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#submit-btn img {
+  width: 120px; /* Adjust the width as needed */
+
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Media Queries */
+@media (orientation: landscape) and (min-width: 768px) {
+  /* Styles for tablet-sized screens in landscape mode */
+  .rating-container {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styles for tablets and smaller screens */
+  .rating-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .rating-option {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for mobile phones and smaller screens */
+  .feedback-form {
+    margin-top: 10px;
+  }
+  /* Adjust input box width for smaller screens */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    max-width: 300px;
+  }
+}
